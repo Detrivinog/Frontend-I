@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.descuentos {
+    position: sticky;
+    background-color: #1CD1B0;
+    height: 38px;
+    font-size: 15px;
+    padding: 10px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+h1 {
+    position: sticky;
+    background-color: #00669F;
+    font-size: 40px;
+    height: 101px;
+    padding: 28px;
+    width: 100%;
+    top: 38px;
+}
+
+main {
+    position: absolute;
+    width: 960px;
+    height: 532px;
+    margin: 290px 32px;
+}
+
+.heroes {
+    position: relative;
+    width: 300px;
+    height: 529px;
+    left: 32px;
+}
