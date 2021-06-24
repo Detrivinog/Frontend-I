@@ -7,23 +7,25 @@
 body {
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 
 header, main, footer {
     display: flex;
     width: 100%;
+    flex-grow: 1;
 }
 
 /* Header */
 
-header {
+header, footer {
     align-items: center;
     background-color: #222222;
     display: flex;
     height: 100px;
 }
 
-.item-header {
+.item-header, .item-footer {
     height: 100%;
 }
 
@@ -31,7 +33,7 @@ header {
     padding: 10px 0px 10px 20px;
 }
 
-h1.item-header{
+h1.item-header, h1.item-footer{
     flex-grow: 0.15;
     padding: 26px 10px;
     color: #39B24A;
@@ -43,15 +45,19 @@ h1.item-header{
     color: white;
 }
 
+.green {
+    color: #39B24A;
+}
+
 h2, .red {
     color: #FC200C;
 }
 
-nav.item-header{
+nav.item-header, nav.item-footer{
     flex-grow: 1;
 }
 
-.nav-header {
+.nav-header{
     align-items: stretch;
     display: flex;
     height: 100%;
@@ -72,3 +78,96 @@ a {
 
 /* Main */
 
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+main {
+    background-color: #e5e5e5;
+    justify-content: center;
+}
+
+.item-main {
+    height: 350px;
+    margin: 35px 19px;   
+    width: 490px;
+}
+
+.delivery {
+    background-image: url('/img/delivery.png');
+    background-repeat: no-repeat;
+    margin-right: 5px;
+}
+
+.delivery h2 {
+    margin: 20px;
+}
+
+.podio {
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.item-podio {
+    width: 100%;
+}
+
+h2.item-podio {
+    text-align: center;
+    margin-top: 26px;
+}
+
+h3.item-podio {
+    font-size: 20px;
+    margin: 58px 69px 20px 69px;
+}
+
+ol.item-podio {
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 51px;
+    width: 200px;
+}
+
+img.item-podio {
+    height: 129px;
+    width: 92px;
+    margin-bottom: 89px;
+    margin-left: 50px;
+}
+
+/* Footer */
+
+footer {
+    height: 150px;
+}
+
+nav.item-footer{
+    order: 0;
+}
+
+div.item-footer {
+    order: 1;
+}
+
+h1.item-footer {
+    order:2;
+    padding: 55px 10px;
+}
+
+.nav-footer {
+    list-style: none;
+    margin-top: 10px;
+    padding: 0px;
+}
+
+.nav-footer .item-lista{
+    margin: 10px 20px;
+}
+
+.item-footer.logo{
+    padding-top: 25px;
+}
