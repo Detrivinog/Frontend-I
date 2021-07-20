@@ -1,0 +1,82 @@
+// Variables
+
+$backCol: #E6E6E6;
+$titleBackCol: #C4C4C4;
+$titleCol: #005677;
+$footCol: #FFF;
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    background-color: $backCol;
+    
+    .center {
+        margin: 21px 670px;
+        height: 147px;
+    }
+}
+
+.background {
+    background-color: $backCol;
+    margin: 0;
+    width: 1440px;
+    height: 189px;
+}
+
+h1, h2 {
+    background-color: $backCol;
+    color: $titleCol;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 35px;
+    font-style: normal;
+    font-weight: bold;
+    height: 60px;
+    justify-content: center;
+    letter-spacing: 4px;
+    padding-top: 25px;
+    text-align: center;
+    width: 100%;
+    word-spacing: 6px;
+}
+
+main {
+    padding: 60px 225px;
+    width: 1041px;
+
+    p {
+        margin-left: 50px; 
+    }
+}
+
+.negrita {
+    font-weight: bold;
+}
+
+.italyc {
+    font-style: italic;
+}
+
+.indentado {
+    margin-left: 5em;
+}
+
+footer {
+    align-content: center;
+    background-color: $titleCol;
+    color: $footCol;
+    font-size: 20px;
+    height: 37px;
+    text-align: center;
+    text-transform: uppercase;
+
+    img {
+        margin-top: 9px;
+        margin-left: 26px; 
+    }
+
+}
