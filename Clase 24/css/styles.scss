@@ -1,0 +1,21 @@
+@import 'variables';
+
+// Mobile 
+
+body {
+    background-color: $backColor;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+
+
+
+// Laptop
+@media (min-width: 1080px){
+
+}
